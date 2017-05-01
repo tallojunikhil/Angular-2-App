@@ -1,0 +1,39 @@
+<h1>{{title}}</h1>
+<br>
+
+<div class="container">
+
+  <div class="row">
+
+    <label class="lead"> Select a Peril : </label>
+    <select class="lead" [(ngModel)]="selectedPeril.pcode" (change)="onSelect($event.target.value)">
+      <option value="">--Select--</option>
+      <option *ngFor="let p of perils" value={{p.pcode}}> {{p.pcodename}}</option>
+    </select>
+  </div>
+  <br>
+
+  <div class="row">
+    <label class="lead"> Select a Bond : </label>
+    <select class="lead">
+      <!--<option *ngIf="selectedPeril.pcode == ''" value=""> &#45;&#45;Select&#45;&#45;</option>-->
+      <option *ngIf="(!selectedPeril.pcode) == ''" value=""> --Select--</option>
+      <option *ngFor="let b of bonds" value={{b.bcode}}> {{b.bcodename}}</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" (click)="onEvaluate()"><strong> Evaluate </strong></button>
+    </div>
+  </div>
+  <br> <br>
+
+  <div class="row">
+    <label class="well"> Peril Code : <strong> {{selectedPeril.pcode}}</strong></label>
+  </div>
+
+  <div class="row">
+    <app-my-grid-application></app-my-grid-application>
+  </div>
+</div>
