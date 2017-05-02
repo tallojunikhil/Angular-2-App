@@ -4,5 +4,39 @@
 <div class="container">
 
   <div class="row">
+
+    <label class="lead labelSize"> Portfolio Code </label>
+    <select class="lead input-sm labelSize" [(ngModel)]="selectedPortfolio.portfolioCode" >
+      <option selected value="">--Select--</option>
+      <option *ngFor="let p of portfolios" value={{p.portfolioCode}}> {{p.portfolioCode}}</option>
+
+    </select>
+  </div>
+
+  <div class="row">
+    <label class="lead labelSize"> Portfolio Date</label>
+    <select class="lead input-sm labelSize" [(ngModel)]="selectedPortfolio.portfolioDate">
+
+      <option selected value=""> --Select--</option>
+      <option *ngFor="let p of portfolios" value="{{p.portfolioDate.getMonth() + '/' + p.portfolioDate.getDate()+ '/' + p.portfolioDate.getFullYear()}}">
+        {{p.portfolioDate.getMonth() + '/' + p.portfolioDate.getDate()+ '/' + p.portfolioDate.getFullYear()}}
+      </option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label class="lead labelSize">Sort Column</label>
+    <select class="lead input-sm labelSize">
+      <option selected value=""> --Select--</option>
+      <option value="fcmcode">FCMCode</option>
+      <option value="100yr"> 100Yr ($mm)</option>
+      <option value="1000yr"> 1000Yr ($mm)</option>
+      <option value="100yrp"> 100Yr (%NAV)</option>
+      <option value="1000yrp"> 1000Yr (%NAV)</option>
+    </select>
+  </div>
+  <div class="row">
+    <app-my-grid-application></app-my-grid-application>
+
   </div>
 </div>
