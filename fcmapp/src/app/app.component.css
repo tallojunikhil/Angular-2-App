@@ -3,9 +3,11 @@ header {
   padding-left: 1%;
   padding-right: 1%;
 }
-body{
+
+body {
   padding-bottom: 70px;
 }
+
 header h1#logo {
   display: inline-block;
   float: left;
@@ -17,7 +19,6 @@ header h1#logo {
 #logo > img {
   width: 70%;
 }
-
 
 #wrapper {
   padding-left: 0;
@@ -168,17 +169,9 @@ header h1#logo {
   padding-top: 15px;
 }
 
-.labelSize{
-  min-width:200px;
+.labelSize {
+  min-width: 225px;
 }
-
-
-
-
-
-
-
-
 
 @media (min-width: 768px) {
   #wrapper {
@@ -222,3 +215,6 @@ header h1#logo {
   }
 }
 
+.datepicker {
+  z-index: 100000 !important;
+}
