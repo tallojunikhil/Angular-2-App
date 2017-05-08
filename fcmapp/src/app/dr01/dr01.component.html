@@ -16,7 +16,6 @@
   <div class="row">
     <label class="lead labelSize"> Portfolio Date</label>
     <select class="lead input-sm labelSize" [(ngModel)]="selectedPortfolio.portfolioDate">
-
       <option selected value=""> --Select--</option>
       <option *ngFor="let p of portfolios" value="{{p.portfolioDate.getMonth() + '/' + p.portfolioDate.getDate()+ '/' + p.portfolioDate.getFullYear()}}">
         {{p.portfolioDate.getMonth() + '/' + p.portfolioDate.getDate()+ '/' + p.portfolioDate.getFullYear()}}

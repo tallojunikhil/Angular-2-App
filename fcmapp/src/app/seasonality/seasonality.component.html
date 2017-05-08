@@ -25,23 +25,23 @@
 
 
   <div class="row" id="sandbox-container">
-    <label class="lead labelSize" style="float:left; line-height: 36px;"> Start Date </label>
-    <div class="input-group input-sm col-xs-4">
+    <label class="lead labelSize" style="float:left; line-height: 40px;"> Start Date </label>
+    <div class="  input-group col-xs-3 ">
       <!--<input type="text" id="startDate" value="" placeholder="mm/dd/yyyy" class="form-control" data-date-autoClose="true"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>-->
-      <my-date-picker class="labelSize" [options]="myDatePickerOptions" placeholder="mm/dd/yyyy" value=""
+      <my-date-picker [options]="myDatePickerOptions" placeholder="mm/dd/yyyy" value=""
                       (dateChanged)="onDateChanged($event)"></my-date-picker>
     </div>
   </div>
   <hr>
 
   <div class="row">
-    <label class="text-info"> Date as of </label>
-    <label class="text-info"> Bond Code </label>
-    <label class="text-info"> Zeroed Peril Codes </label>
-    <label class="text-info"> Start Date</label>
-    <label class="text-info"> Years Left </label>
-    <label class="text-info"> ELFcm (Init) : 18.1</label>
-    <label class="text-info"> ELFcm / Yr (Adj) : 181 </label>
+    <label class="text-info"> Date as of </label> <br>
+    <label class="text-info"> Bond Code </label> <br>
+    <label class="text-info"> Zeroed Peril Codes </label> <br>
+    <label class="text-info"> Start Date</label> <br>
+    <label class="text-info"> Years Left </label> <br>
+    <label class="text-info"> ELFcm (Init) : 18.1</label><br>
+    <label class="text-info"> ELFcm / Yr (Adj) : 181 </label> <br>
   </div>
 
   <div class="row">
