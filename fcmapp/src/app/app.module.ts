@@ -20,7 +20,7 @@ import { ShindoComponent } from './shindo/shindo.component';
 import { ThreatReportComponent } from './threat-report/threat-report.component';
 import { TvarComponent } from './tvar/tvar.component';
 import {CONST_ROUTING} from "./app.routing";
-
+import { MyDatePickerModule } from "mydatepicker"
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +45,8 @@ import {CONST_ROUTING} from "./app.routing";
     FormsModule,
     HttpModule,
     CONST_ROUTING,
-    AgGridModule.withComponents(RedComponentComponent)
+    AgGridModule.withComponents(RedComponentComponent),
+    MyDatePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

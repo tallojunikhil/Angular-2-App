@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from "../DataService";
+import {IMyDateModel, IMyOptions} from "mydatepicker";
 
 @Component({
   selector: 'app-seasonality',
@@ -9,7 +10,24 @@ import {DataService} from "../DataService";
 })
 export class SeasonalityComponent implements OnInit {
   title = 'Seasonality';
-  constructor() { }
+
+  private myDatePickerOptions: IMyOptions = {
+    dateFormat: 'mm/dd/yyyy',
+    inline: false
+
+  }
+  bondcodes = [
+    {
+      name:'VENTERRA 13-1A',
+      value:'venterra'
+    }
+  ];
+  constructor() {
+
+  }
+  onDateChanged(event: IMyDateModel){
+
+  }
 
   ngOnInit() {
   }
