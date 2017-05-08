@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bf8815-3591-43ba-91bf-a38d22d356ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fcmapp/.angular-cli.json" afterPath="$PROJECT_DIR$/fcmapp/.angular-cli.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fcmapp/package.json" afterPath="$PROJECT_DIR$/fcmapp/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fcmapp/src/app/app.component.css" afterPath="$PROJECT_DIR$/fcmapp/src/app/app.component.css" />
@@ -43,11 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".angular-cli.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".angular-cli.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fcmapp/.angular-cli.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
               <caret line="28" column="78" lean-forward="false" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -86,7 +96,7 @@
       </list>
     </option>
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/fcmapp" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -136,6 +146,7 @@
         <option value="$PROJECT_DIR$/fcmapp/src/app/threat-report/threat-report.component.html" />
         <option value="$PROJECT_DIR$/fcmapp/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/fcmapp/.angular-cli.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -379,7 +390,7 @@
       <workItem from="1493670798937" duration="1371000" />
       <workItem from="1493735392985" duration="20839000" />
       <workItem from="1493996040547" duration="14862000" />
-      <workItem from="1494254031450" duration="8572000" />
+      <workItem from="1494254031450" duration="8684000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code at 10:52 05/1/2017">
       <created>1493650483774</created>
@@ -434,7 +445,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89310000" />
+    <option name="totallyTimeSpent" value="89422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,13 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="3302" column="17" lean-forward="true" selection-start-line="3302" selection-start-column="17" selection-end-line="3302" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -918,6 +922,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="28" column="78" lean-forward="false" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding />
         </state>
       </provider>
