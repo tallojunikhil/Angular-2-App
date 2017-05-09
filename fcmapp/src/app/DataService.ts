@@ -4,6 +4,7 @@
 import { Injectable } from '@angular/core'
 import {Peril} from './peril'
 import {Bonds} from './bonds'
+import { Portfoliocodes } from './portfoliocode'
 
 @Injectable()
 export class DataService{
@@ -31,6 +32,17 @@ export class DataService{
       new Bonds('B-ABC 4','P-ABC','B ABC Details 4')
 
 
+    ];
+  }
+  getPortfoliocodes(){
+    return[
+      new Portfoliocodes( 'A','20170331'),
+      new Portfoliocodes( 'AY','20170430'),
+      new Portfoliocodes( 'G','20170501'),
+      new Portfoliocodes( 'GS','20170601'),
+      new Portfoliocodes( 'MKT','20170701'),
+      new Portfoliocodes( 'P','20170701'),
+      new Portfoliocodes( 'SRBB','20170801')
     ];
   }
 

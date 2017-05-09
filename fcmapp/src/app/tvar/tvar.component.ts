@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from "../DataService";
+import { Portfoliocodes } from "../portfoliocode";
 
 @Component({
   selector: 'app-tvar',
@@ -9,7 +10,12 @@ import {DataService} from "../DataService";
 })
 export class TvarComponent implements OnInit {
   title = 'TVaR';
-  constructor() { }
+  selectedPortfoliocodes: Portfoliocodes = new Portfoliocodes('', '');
+
+  portfoliocodes: Portfoliocodes[];
+  constructor(private _dataService: DataService) {
+    this.portfoliocodes = this._dataService.getPortfoliocodes();
+  }
 
   ngOnInit() {
   }

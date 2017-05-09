@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from "../DataService";
+import {  Portfoliocodes } from "../portfoliocode";
 
 @Component({
   selector: 'app-mlse',
@@ -10,7 +11,12 @@ import {DataService} from "../DataService";
 export class MlseComponent implements OnInit {
 
   title = 'MLSE';
-  constructor() { }
+  selectedPortfoliocodes: Portfoliocodes = new Portfoliocodes('', '');
+
+  portfoliocodes: Portfoliocodes[];
+  constructor(private _dataService: DataService) {
+    this.portfoliocodes = this._dataService.getPortfoliocodes();
+  }
 
   ngOnInit() {
   }

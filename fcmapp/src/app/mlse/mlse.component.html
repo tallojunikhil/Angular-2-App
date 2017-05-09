@@ -4,6 +4,45 @@
 
 <div class="container">
 
+    <div class="row">
+      <label class="lead labelSize"> Abbrev : </label>
+      <select class="lead labelSize input-sm"  [(ngModel)]="selectedPortfoliocodes.pfcode" (change)="onSelect($event.target.value)">
+        <option value="">--Select--</option>
+        <option *ngFor="let pf of portfoliocodes" value={{pf.pfcode}}>{{pf.pfcode}} </option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label class="lead labelSize"> Date : </label>
+      <select class="lead labelSize input-sm"  [(ngModel)]="selectedPortfoliocodes.pfdate" (change)="onSelect($event.target.value)">
+        <option value="">--Select--</option>
+        <option *ngFor="let pf of portfoliocodes" value={{pf.pfdate}}>{{pf.pfdate}} </option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label class="lead labelSize"> SortColumn : </label>
+      <select class="lead labelSize input-sm"  (change)="onSelect($event.target.value)">
+        <option value="">--Select--</option>
+        <option value="MLSE">MLSE</option>
+        <option value="PerilCode">PerilCode</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label class="lead labelSize"> Units : </label>
+      <select class="lead labelSize input-sm"  (change)="onSelect($event.target.value)">
+        <option value="">--Select--</option>
+        <option value="%">%</option>
+        <option value="$">$</option>
+      </select>
+    </div>
+    <div class="row">
+      <label class="lead labelSize"> IncludeBenefitOfYield:  </label> &nbsp;
+      <input type="checkbox" class="labelSize">
+    </div>
+
   <div class="row">
+    <app-my-grid-application></app-my-grid-application>
   </div>
 </div>

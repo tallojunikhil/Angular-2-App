@@ -3,6 +3,35 @@
 
 <div class="container">
 
+    <div class="row">
+      <label class="lead labelSize"> PortfolioCode : </label>
+      <select class="lead labelSize input-sm"  [(ngModel)]="selectedPortfoliocodes.pfcode" (change)="onSelect($event.target.value)">
+        <option value="">--Select--</option>
+        <option *ngFor="let pf of portfoliocodes" value={{pf.pfcode}}>{{pf.pfcode}} </option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label class="lead labelSize" style="float: left"> PortfolioDate : </label>
+      <div class="input-group input-sm labelSize col-xs-5" >
+        <my-date-picker [options]="myDatePickerOptions"
+                        (dateChanged)="onDateChanged($event)"></my-date-picker></div>
+      <!--<select class="lead labelSize input-sm" [(ngModel)]="selectedPortfoliocodes.pfdate" (change)="onSelect($event.target.value)">-->
+        <!--<option value="">&#45;&#45;Select&#45;&#45;</option>-->
+        <!--<option *ngFor="let pf of portfoliocodes" value={{pf.pfdate}}>{{pf.pfdate}} </option>-->
+      <!--</select>-->
+    </div>
+
+    <div class="row">
+      <label class="lead labelSize"> SortColumn : </label>
+      <select class="lead labelSize input-sm"  (change)="onSelect($event.target.value)">
+        <option value="">--Select--</option>
+        <option value="NotionalExposure">NotionalExposure</option>
+        <option value="PerilCode">PerilCode</option>
+      </select>
+    </div>
+
   <div class="row">
+    <app-my-grid-application></app-my-grid-application>
   </div>
 </div>
