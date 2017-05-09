@@ -32,5 +32,16 @@ $(document).ready(function () {
     console.log('clicked..');
   });
 
+  $('#sandbox-container .input-group.date').datepicker({
+    maxViewMode: 3,
+    todayBtn: "linked",
+    autoclose: true,
+    clearBtn: true,
+    orientation: "bottom left",
+  }).on('change', function () {
+    $('.datepicker').hide();
+    $('#startDate').attr('value', $("#sandbox-container").find("input").val());
+  });
+
   initMenu();
 });

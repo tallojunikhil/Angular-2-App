@@ -10,14 +10,17 @@ import {Bonds} from "../bonds";
   styleUrls: ['../app.component.css'],
   providers: [DataService],
 })
+
+
 export class BondPerilComponent implements OnInit {
   title = 'Bond Peril';
-  private gridOptions: GridOptions;
-  selectedPeril: Peril = new Peril('P-DEF', 'P DEF Details');
+  // private gridOptions: GridOptions;
+
+  selectedPeril: Peril = new Peril('P-ABC', 'P ABC Details');
   // selectedBond: Bonds = new Bonds('B-ABC 1','P-ABC','B ABC Details 1');
   perils: Peril[];
   bonds: Bonds[];
-  pcodenamevalue:string;
+
   constructor(private _dataService: DataService) {
     this.perils = this._dataService.getPerils();
   }

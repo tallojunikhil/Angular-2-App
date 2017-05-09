@@ -4,5 +4,47 @@
 <div class="container">
 
   <div class="row">
+    <label class="lead labelSize"> Abbrev </label>
+    <select class="lead input-sm labelSize" name="abbrev" >
+      <option selected value="">--Select--</option>
+      <option *ngFor="let _pc of pcodes" value={{_pc.value}}>{{_pc.name}}</option>
+
+    </select>
   </div>
+  <div class="row">
+    <label class="lead labelSize"> Date </label>
+    <select class="lead input-sm labelSize">
+        <option selected value="">--Select--</option>
+        <option *ngFor="let _dates of dates" value="{{_dates.value.getMonth() + '/' + _dates.value.getDate()+'/'+_dates.value.getFullYear()}}">
+          {{_dates.value.getMonth() + '/' + _dates.value.getDate()+'/'+_dates.value.getFullYear()}}
+        </option>
+    </select>
+  </div>
+  <div class="row">
+    <label class="lead labelSize"> Peril Code </label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option *ngFor="let _pcodes of pcodes" value="{{_pcodes.value}}">{{_pcodes.name}}</option>
+    </select>
+  </div>
+  <div class="row">
+    <label class="lead labelSize"> Sort Column </label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option value="fcmcode">FCM Code</option>
+      <option value="size">Size ($)</option>
+      <option value="onriskfactor">On Risk Factor</option>
+      <option value="perilexposure">Peril Exposure Factor</option>
+      <option value="deadperil">Dead Peril Factor</option>
+      <option value="firstevent">First Event Exposure ($)</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <app-my-grid-application></app-my-grid-application>
+  </div>
+  <div class="row">
+    <app-my-grid-application></app-my-grid-application>
+  </div>
+
 </div>

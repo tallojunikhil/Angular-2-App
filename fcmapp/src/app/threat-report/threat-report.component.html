@@ -4,5 +4,35 @@
 <div class="container">
 
   <div class="row">
+    <label class="labelSize lead"> Portfolio Code</label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select</option>
+      <option *ngFor="let _pcodes of pcodes"  value="{{_pcodes.value}}"> {{_pcodes.name}}</option>
+    </select>
   </div>
+  <div class="row">
+    <label class="labelSize lead"> Segment Number </label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select</option>
+      <option *ngFor="let _sn of segmentnumber" value="{{_sn.value}}">{{_sn.name}} </option>
+
+    </select>
+
+  </div>
+  <div class="row">
+    <label class="lead labelSize"> Sort Column</label>
+    <select class="lead labelSize input-sm">
+      <option selected value="">--Select--</option>
+      <option value="fcmcode"> FCM Code</option>
+      <option value="size"> Size </option>
+    </select>
+  </div>
+
+  <div class="row">
+    <app-my-grid-application></app-my-grid-application>
+  </div>
+  <div class="row">
+    <app-my-grid-application></app-my-grid-application>
+  </div>
+
 </div>
