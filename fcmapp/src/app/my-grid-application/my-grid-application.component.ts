@@ -7,7 +7,7 @@ import {DataService} from "../DataService"
   templateUrl: './my-grid-application.component.html',
   styleUrls: ['./my-grid-application.component.css']
 })
-export class MyGridApplicationComponent extends  DataService implements OnInit {
+export class MyGridApplicationComponent extends  DataService  implements OnInit {
 
   private gridOptions: GridOptions;
 

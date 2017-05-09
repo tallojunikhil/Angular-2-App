@@ -4,5 +4,52 @@
 <div class="container">
 
   <div class="row">
+    <label class="lead labelSize"> Bond Code </label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option *ngFor="let _bc of bondcodes" value="{{_bc.value}}"> {{_bc.name}}</option>
+    </select>
   </div>
+
+  <div class="row">
+    <label class="lead labelSize"> Zeroed Peril Code </label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option value="0.1">0.1</option>
+      <option value="0.2">0.2</option>
+      <option value="0.5">0.5</option>
+      <option value="1">1</option>
+
+    </select>
+  </div>
+
+
+  <div class="row" id="sandbox-container">
+    <label class="lead labelSize" style="float:left; line-height: 40px;"> Start Date </label>
+    <div class="  input-group col-xs-3 ">
+      <!--<input type="text" id="startDate" value="" placeholder="mm/dd/yyyy" class="form-control" data-date-autoClose="true"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>-->
+      <my-date-picker [options]="myDatePickerOptions" placeholder="mm/dd/yyyy" value=""
+                      (dateChanged)="onDateChanged($event)"></my-date-picker>
+    </div>
+  </div>
+  <hr>
+
+  <div class="row">
+    <label class="text-info"> Date as of </label> <br>
+    <label class="text-info"> Bond Code </label> <br>
+    <label class="text-info"> Zeroed Peril Codes </label> <br>
+    <label class="text-info"> Start Date</label> <br>
+    <label class="text-info"> Years Left </label> <br>
+    <label class="text-info"> ELFcm (Init) : 18.1</label><br>
+    <label class="text-info"> ELFcm / Yr (Adj) : 181 </label> <br>
+  </div>
+
+  <div class="row">
+    <app-my-grid-application></app-my-grid-application>
+  </div>
+  <div class="row">
+    <app-my-grid-application></app-my-grid-application>
+  </div>
+
 </div>
+

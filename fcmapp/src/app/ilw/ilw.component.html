@@ -5,5 +5,81 @@
 <div class="container">
 
   <div class="row">
+    <label class="lead labelSize"> Peril</label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option *ngFor="let p of peril" value={{p.value}}>{{p.name}}</option>
+    </select>
   </div>
+
+  <div class="row">
+    <label class="lead labelSize"> Region</label>
+    <select class="lead input-sm labelSize" >
+      <option selected value="">--Select--</option>
+      <option *ngFor="let s of states" value={{s.value}}>{{s.name}}</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label class="lead labelSize"> LOB</label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option *ngFor="let l of lob" value={{l.value}}>{{l.name}}</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label class="lead labelSize"> RMS </label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option *ngFor="let l of rms" value={{l.value}}>{{l.name}}</option>
+
+    </select>
+  </div>
+
+  <div class="row">
+    <label class="lead labelSize"> EQE </label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option *ngFor="let e of eqe" value={{e.value}}>{{e.name}}</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label class="lead labelSize"> AggOcc</label>
+    <select class="lead input-sm labelSize">
+      <option selected value="">--Select--</option>
+      <option *ngFor="let a of aggocc" value={{a.value}}>{{a.name}}</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label class="lead labelSize"> EP% - Points</label>
+    <select class="lead input-sm labelSize" name="ep" >
+      <option selected value="">--Select--</option>
+      <option *ngFor="let _ep of ep" value={{_ep.value}}>{{_ep.name}}</option>
+
+    </select>
+  </div>
+
+  <div class="row">
+    <label class="lead labelSize"> Loss Points (B)</label>
+    <select class="lead input-sm labelSize" name="lp">
+      <option selected value="">--Select--</option>
+      <option value="1">1</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="25">25</option>
+      <option value="100">100</option>
+
+    </select>
+
+  </div>
+
+  <div class="row">
+
+    <app-my-grid-application></app-my-grid-application><br>
+    <app-my-grid-application></app-my-grid-application>
+  </div>
+
 </div>

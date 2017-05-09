@@ -3,9 +3,11 @@ header {
   padding-left: 1%;
   padding-right: 1%;
 }
-body{
+
+body {
   padding-bottom: 70px;
 }
+
 header h1#logo {
   display: inline-block;
   float: left;
@@ -17,7 +19,6 @@ header h1#logo {
 #logo > img {
   width: 70%;
 }
-
 
 #wrapper {
   padding-left: 0;
@@ -149,6 +150,29 @@ header h1#logo {
   margin-top: -35px;
 }
 
+.footer {
+  clear: both;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  height: 60px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.labelSize {
+  min-width: 225px;
+}
+
 @media (min-width: 768px) {
   #wrapper {
     padding-left: 250px;
@@ -190,7 +214,6 @@ header h1#logo {
 
   }
 }
-
 .footer {
   clear: both;
   width: 100%;
