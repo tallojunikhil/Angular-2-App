@@ -1,16 +1,17 @@
 <h1>{{title}}</h1>
-<br>
+
 
 <div class="container">
 
   <div class="row">
+    <div class="col-md-4">
     <label class="labelSize lead"> Portfolio Code</label>
     <select class="lead input-sm labelSize">
       <option selected value="">--Select</option>
       <option *ngFor="let _pcodes of pcodes"  value="{{_pcodes.value}}"> {{_pcodes.name}}</option>
     </select>
-  </div>
-  <div class="row">
+  <!--</div>-->
+  <!--<div class="row">-->
     <label class="labelSize lead"> Segment Number </label>
     <select class="lead input-sm labelSize">
       <option selected value="">--Select</option>
@@ -18,8 +19,8 @@
 
     </select>
 
-  </div>
-  <div class="row">
+  <!--</div>-->
+  <!--<div class="row">-->
     <label class="lead labelSize"> Sort Column</label>
     <select class="lead labelSize input-sm">
       <option selected value="">--Select--</option>
@@ -28,11 +29,10 @@
     </select>
   </div>
 
-  <div class="row">
+  <div class="col-md-8">
     <app-my-grid-application></app-my-grid-application>
-  </div>
-  <div class="row">
-    <app-my-grid-application></app-my-grid-application>
+    <!--<app-my-grid-application></app-my-grid-application>-->
   </div>
 
+</div>
 </div>

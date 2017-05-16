@@ -1,17 +1,18 @@
 <h1>{{title}}</h1>
-<br>
+
 
 <div class="container">
 
   <div class="row">
+  <div class="col-md-4">
     <label class="lead labelSize"> PortfolioCode : </label>
     <select class="lead labelSize input-sm" [(ngModel)]="selectedPortfoliocodes.pfcode" (change)="onSelect($event.target.value)">
       <option value="">--Select--</option>
       <option *ngFor="let pf of portfoliocodes" value={{pf.pfcode}}>{{pf.pfcode}} </option>
     </select>
-  </div>
+  <!--</div>-->
 
-  <div class="row">
+  <!--<div class="row">-->
 
     <!--<form #myForm="ngForm" novalidate>-->
       <!--<my-date-picker name="mydate" [options]="myDatePickerOptions"-->
@@ -26,26 +27,27 @@
       <!--<option *ngFor="let pf of portfoliocodes" value={{pf.pfdate}}>{{pf.pfdate}} </option>-->
     <!--</select>-->
     </div>
-  </div>
+  <!--</div>-->
 
-  <div class="row">
-    <label class="lead labelSize"> SortColumn : </label>cd
+  <!--<div class="row">-->
+    <label class="lead labelSize"> SortColumn : </label>
     <select class="lead labelSize input-sm"  (change)="onSelect($event.target.value)">
       <option value="">--Select--</option>
       <option value="CELP">CELP</option>
       <option value="PerilCode">PerilCode</option>
     </select>
-  </div>
+  <!--</div>-->
 
-  <div class="row">
+  <!--<div class="row">-->
     <label class="lead labelSize"> NLargestPerils : </label>
     <input type="number" max="100" min="1">
-  </div>
-  <div class="row">
+  <!--</div>-->
+  <!--<div class="row">-->
     <label class="lead labelSize"> IncludeOther  </label> &nbsp;
     <input type="checkbox">
   </div>
-  <div class="row">
+  <div class="col-md-8">
     <app-my-grid-application></app-my-grid-application>
   </div>
+</div>
 </div>

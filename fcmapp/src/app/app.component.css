@@ -2,26 +2,35 @@ header {
   width: 100% !important;
   padding-left: 1%;
   padding-right: 1%;
+  height: 65px;
+  border-bottom: 1px solid #cfcfcf ;
+
 }
 
 body {
-  padding-bottom: 70px;
+  padding-bottom: 100px;
+  font-size: 10px !important;
 }
 
 header h1#logo {
   display: inline-block;
   float: left;
   font-family: "Oswald", sans-serif;
-  font-size: 60px;
+  font-size: 15px;
   transition: all 0.3s;
+}
+h1{
+  font-size: 16px;
 }
 
 #logo > img {
-  width: 70%;
+  width: 36%;
+}
+.lead{
+  font-size: 10px !important;
 }
 
 #wrapper {
-  padding-left: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -38,7 +47,6 @@ header h1#logo {
   /*z-index: 1000;*/
   position: absolute;
   left: 250px;
-  width: 250px;
   margin-left: -250px;
   overflow-y: auto;
   background: transparent;
@@ -49,26 +57,26 @@ header h1#logo {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+  width: 150px;
 }
 
 #sidebar-wrapper {
-  width: 250px;
+  width: 150px;
   height: 100% !important;
   display: table-cell;
 
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+  width: 150px;
 }
 
 #wrapper.toggled-2 #sidebar-wrapper {
-  width: 50px;
+  width: 150px;
 }
 
 #wrapper.toggled-2 #sidebar-wrapper:hover {
-  width: 250px;
+  width: 150px;
 }
 
 #page-content-wrapper {
@@ -79,7 +87,7 @@ header h1#logo {
 }
 
 .xyz {
-  min-width: 360px;
+  min-width: 200px;
   /*min-height: 1000px;*/
 }
 
@@ -97,7 +105,7 @@ header h1#logo {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 150px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -105,8 +113,8 @@ header h1#logo {
 }
 
 .sidebar-nav li {
-  text-indent: 15px;
-  line-height: 40px;
+  text-indent: 7px;
+  line-height: 28px;
 }
 
 .sidebar-nav li a {
@@ -128,9 +136,9 @@ header h1#logo {
 }
 
 .sidebar-nav > .sidebar-brand {
-  height: 65px;
-  font-size: 18px;
-  line-height: 60px;
+  height: 50px;
+  font-size: 10px;
+  line-height: 10px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -160,7 +168,7 @@ header h1#logo {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
-  height: 60px;
+  height: 30px;
 }
 
 .footer > .container {
@@ -170,12 +178,13 @@ header h1#logo {
 }
 
 .labelSize {
-  min-width: 225px;
+  min-width: 120px;
+  margin-bottom: 1px;
 }
 
 @media (min-width: 768px) {
   #wrapper {
-    padding-left: 250px;
+    padding-left: 150px;
   }
 
   .fixed-brand {
@@ -189,7 +198,7 @@ header h1#logo {
   #page-content-wrapper {
     /*padding: 20px;*/
     position: relative;
-    width: 100%;
+    width: 100% !important;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -224,14 +233,17 @@ header h1#logo {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
-  height: 60px;
+  height: 30px;
 }
 
 .footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 15px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-top: 4px;
 }
 .labelSize{
-  width: 200px;
+  width: 100px;
+}
+.alignment{
+
 }

@@ -22,18 +22,18 @@ export class MyGridApplicationComponent extends  DataService  implements OnInit 
       {
         headerName: "Peril Code",
         field: "code",
-        width: 150
+        width: 100
       },
       {
         headerName: "Weight Norm",
         field: "wn",
-        width: 150
+        width: 100
       },
       {
         headerName: "Weight EL",
         field: "wel",
         cellRendererFramework: RedComponentComponent,
-        width: 250
+        width: 100
       },
 
     ];

@@ -1,17 +1,18 @@
 <h1>{{title}}</h1>
-<br>
+
 
 <div class="container">
 
     <div class="row">
+      <div class="col-md-4">
       <label class="lead labelSize"> Portfolio Code : </label>
       <select class="lead labelSize input-sm" [(ngModel)]="selectedPortfoliocodes.pfcode" (change)="onSelect($event.target.value)">
         <option value="">--Select--</option>
         <option *ngFor="let pf of portfoliocodes" value={{pf.pfcode}}>{{pf.pfcode}} </option>
       </select>
-    </div>
+    <!--</div>-->
 
-    <div class="row">
+    <!--<div class="row">-->
       <label class="lead labelSize"> Loss Threshold : </label>
       <select class="lead labelSize input-sm"  (change)="onSelect($event.target.value)">
         <option value="">--Select--</option>
@@ -23,9 +24,9 @@
         <option value="5.">5.</option>
 
       </select>
-    </div>
+    <!--</div>-->
 
-    <div class="row">
+    <!--<div class="row">-->
       <label class="lead labelSize" style="float: left"> Portfolio Date : </label>
       <div class="input-group input-sm labelSize col-xs-5" >
         <my-date-picker [options]="myDatePickerOptions"
@@ -34,9 +35,9 @@
         <!--<option value="">&#45;&#45;Select&#45;&#45;</option>-->
         <!--<option *ngFor="let pf of portfoliocodes" value={{pf.pfdate}}>{{pf.pfdate}} </option>-->
       <!--</select>-->
-    </div>
+    <!--</div>-->
 
-    <div class="row">
+    <!--<div class="row">-->
       <label class="lead labelSize"> SortColumn : </label>
       <select class="lead labelSize input-sm"  (change)="onSelect($event.target.value)">
         <option value="">--Select--</option>
@@ -45,7 +46,9 @@
         <option value="VaR">VaR</option>
       </select>
     </div>
-    <div class="row">
+    <!--<div class="row">-->
+  <div class="col-md-8">
       <app-my-grid-application></app-my-grid-application>
     </div>
+</div>
 </div>

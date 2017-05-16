@@ -1,19 +1,20 @@
-<h1>{{title}}</h1>
-<br>
+ <h1>{{title}}</h1>
+
 
 <div class="container">
 
   <div class="row">
-
+    <div class="col-md-4">
     <label class="lead labelSize"> Portfolio Code </label>
     <select class="lead input-sm labelSize" [(ngModel)]="selectedPortfolio.portfolioCode" >
       <option selected value="">--Select--</option>
       <option *ngFor="let p of portfolios" value={{p.portfolioCode}}> {{p.portfolioCode}}</option>
 
     </select>
-  </div>
+  <!--</div>-->
 
-  <div class="row">
+  <!--<div class="row">-->
+
     <label class="lead labelSize"> Portfolio Date</label>
     <select class="lead input-sm labelSize" [(ngModel)]="selectedPortfolio.portfolioDate">
       <option selected value=""> --Select--</option>
@@ -21,9 +22,9 @@
         {{p.portfolioDate.getMonth() + '/' + p.portfolioDate.getDate()+ '/' + p.portfolioDate.getFullYear()}}
       </option>
     </select>
-  </div>
+  <!--</div>-->
 
-  <div class="row">
+  <!--<div class="row">-->
     <label class="lead labelSize">Sort Column</label>
     <select class="lead input-sm labelSize">
       <option selected value=""> --Select--</option>
@@ -34,8 +35,9 @@
       <option value="1000yrp"> 1000Yr (%NAV)</option>
     </select>
   </div>
-  <div class="row">
+  <div class="col-md-8">
     <app-my-grid-application></app-my-grid-application>
 
   </div>
+</div>
 </div>
